@@ -1,0 +1,202 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.banner {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blurred-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.projects {
+    background: hsla(217, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+    padding: 50px;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    max-width: 300px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.project-image:hover {
+    transform: scale(1.1); /* Apply the zoom-in effect on hover */
+}
+
+.separator {
+    width: 1px;
+    height: 100px;
+    background-color: #444;
+    margin: 0 30px;
+}
+
+.project-text-right {
+    max-width: 600px;
+    text-align: right;
+}
+
+.project-text-right h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-text-right p {
+    font-size: 18px;
+}
+
+.project-text-right h2 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.horizontal-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    margin: 20px 0;
+}
+
+.project-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.project-text h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-text p {
+    font-size: 18px;
+}
+
+.project-text h2 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.white-icon {
+    color: #fff;
+    vertical-align: middle;
+    font-size: 35px;
+}
+.social-icons,
+    .profile img {
+        margin-right: 10px;
+        font-size: 35px; /* Set the initial font size */
+        line-height: 1; /* Ensure proper vertical alignment */
+        display: inline-block; /* Adjust display to avoid layout issues */
+        transition: transform 0.3s ease; /* Add the transition property for smooth animation */
+    }
+
+    .social-icons:hover,
+    .profile img:hover {
+        transform: scale(1.2); /* Increase the scale on hover */
+    }
+
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile h1 {
+        font-size: 18px;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-image {
+        max-width: 100%;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .horizontal-separator {
+        margin: 10px 0;
+    }
+
+    .project-text-right,
+    .project-text {
+        text-align: center;
+    }
+
+    .project-text-right h2,
+    .project-text h2 {
+        font-size: 20px;
+    }
+
+    
+
+    .project-text-right p,
+    .project-text p {
+        font-size: 16px;
+    }
+}

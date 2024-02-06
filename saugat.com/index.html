@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="D:\Sublime Text\saugat.com\Saugat.jpg">
+
+    <title>Grimmy's Portfolio</title>
+    <link rel="stylesheet" href="./stylee.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html"> <img style=" height: 70px;
+                    width: 210px;
+      " 
+        src="D:\Sublime Text\saugat.com\blogo.png "
+        alt="Grimmy's logo"
+        class="logo"
+      /></a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="./Gallery.html">Gallery</a></li>
+          <li><a class="navbar-link" href="./projects.html">Projects</a></li>
+          <li><a class="navbar-link" href="./contact.html">Contact</a></li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </header>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", fantasy;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 4.8rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: background: rgb(88,115,255);
+background: radial-gradient(circle, rgba(88,115,255,1) 0%, rgba(188,240,255,1) 100%);;
+}
+
+.header .logo {
+  height: 3rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #212529;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #364fc7;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+@media (max-width: 62em) {
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    border: 3px solid #212529;
+    color: #212529;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 80%;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .header .logo {
+    width: 60px;
+    height: 100px;
+  }
+}
+  </style>
+    </header>
+    <section class="banner">
+        <img src="D:\Sublime Text\saugat.com\mountains.gif" alt="Banner Image" class="blurred-img">
+        <div class="profile">
+            <img src="D:\Sublime Text\saugat.com\Grimmy.jpg" alt="Profile Image">
+            <h1>Grimmy</h1>
+    
+            <a href="https://facebook.com/grimmy01" class="social-icons"><i class="fa-brands fa-facebook fa-3xl white-icon"></i></a>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="project">
+            <div class="horizontal-separator"></div>
+            <div class="project-content">
+                <img src="D:\Sublime Text\saugat.com\web.gif" alt="SolarHosting Logo" class="project-image" width="200" height="150">
+                <div class="separator"></div>
+                <div class="project-text">
+                    <h2>Project 1</h2>
+                    <p>
+                    Grimmy made a Web Site as School Project:)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-separator"></div>
+        <div class="project">
+            <div class="project-content">
+                <div class="project-text-right">
+                    <h2>Project 2</h2>
+                    <p>
+                       Started to learn coding a coding project will be made soon.
+                    </p>
+                </div>
+                <div class="separator"></div>
+                <img src="D:\Sublime Text\saugat.com\coding.gif" alt="Project Image" class="project-image" width="150" height="150">
+            </div>
+        </div>
+        <div class="project">
+            <div class="horizontal-separator"></div>
+            <div class="project-content">
+               <img src="D:\Sublime Text\saugat.com\Busy.gif" alt="Project Image" class="project-image" width="150" height="150">
+                <div class="separator"></div>
+                <div class="project-text">
+                    <h2>Project 3</h2>
+                    <p>
+                    Grimmy is going on you will be updated and notified soon.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="horizontal-separator"></div>
+    </section>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Contact Me</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button">
+        </form>
+    </div>
+</body>
+    
