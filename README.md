@@ -80,6 +80,16 @@ Nodepay Bot is an advanced automation tool designed to streamline account regist
 - Nodepay-Extension-Bot
 - Nodepay-Bot
 - Nodepay-Multiwallet
+- Nodepay-Multiwallet
+- nodepay-mining-bot
+- nodepay-airdrop-bot
+- Nodepay
+- app-nodepay-extension
+- nodepay-crypto
+- airdrop
+- crypto
+- blockchain
+- nodepay-ai
 
 ---
 
